@@ -18,46 +18,41 @@
   <div class="container">
     
     <center>
-<h3 class="btn btn-default heading">RECONHECIMENTO DE IMAGENS</h3>
+      <h3 class="btn btn-default heading">RECONHECIMENTO DE IMAGEM</h3>
       <br><br>
 
       <p style="font-size: 22px;">O modelo foi treinado para identificar estes objetos:</p>
-<b class="name_of_objects">
 
-tesoura
-<hr>
-caneta
-<hr>
-pato
-<hr>
-minigame
-<hr>
-copo vazio
-<hr>
-polvo
-<hr>
-garrafa laranja
-<hr>
-slime
-<hr>
-</b>
-      <label>Visualização da webcam:</label>
-<div id="camera"></div>
+      <b class="name_of_objects">
+        Relógio
+        <hr>
+        Colher
+        <hr>
+        Smartphone
+        <hr>
+        Garrafa D'água
+        <hr>
+      </b>
+
+      <label>Visualização da Webcam:</label>
+      <div id="camera"></div>
       <br><br>
-<div id="result"></div>
+      <div id="result"></div>
       <br><br>
-<button onclick="take_snapshot()" class="btn btn-info">capturar</button>
+      <button onclick="take_snapshot();" class="btn btn-info">Capturar Imagem</button>
       <br><br>
-<button onclick="check()" class="btn btn-success">identificar</button>
+      <button onclick="check();" class="btn btn-success">Identificar Imagem</button>
       <br><br>
 
-      <p style="font-size: 22px;">Objeto:  </p>
-      <p style="font-size: 22px;">Precisão:  </p>
+      <p style="font-size: 22px;">Objeto: <span id="result_object_name"></span> </p>
+      <p style="font-size: 22px;">Precisão: <span id="result_object_accuracy"></span> </p>
     </center>
 
   </div>
 <script src="main.js"></script>
 
+  </body>
+</html>
   </body>
 </html>
 
