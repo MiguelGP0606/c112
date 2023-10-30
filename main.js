@@ -1,4 +1,5 @@
-Webcam.set({
+
+  Webcam.set({
     width:350,
     height:300,
     image_format : 'png',
@@ -18,10 +19,10 @@ function take_snapshot()
 }
 
   console.log('ml5 version:', ml5.version);
+  
+classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/wCuNBSeIp/',modelLoaded);
 
-classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/v_sl95BzE/model.json",modelloaded);
-
-function modelLoaded() {
+  function modelLoaded() {
     console.log('Model Loaded!');
   }
       
